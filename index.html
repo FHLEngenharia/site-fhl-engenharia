@@ -23,6 +23,7 @@
       </a>
       <nav class="main-nav">
         <a href="#servicos">Serviços</a>
+        <a href="#trabalhos">Trabalhos</a>
         <a href="#sobre">Sobre</a>
         <a href="#contato">Contato</a>
       </nav>
@@ -73,6 +74,16 @@
       </div>
     </section>
 
+    <section id="trabalhos" class="trabalhos">
+      <div class="container">
+        <h2>Trabalhos Realizados</h2>
+        <p class="trabalhos-intro">Clique no cliente para ver os trabalhos realizados para ele.</p>
+
+        <div id="clientes-lista" class="clientes-lista"></div>
+        <div id="trabalhos-lista" class="cards"></div>
+      </div>
+    </section>
+
     <section id="sobre" class="sobre">
       <div class="container">
         <h2>Sobre a FHL Engenharia</h2>
@@ -104,8 +115,76 @@
     </div>
   </footer>
 
+  <script src="trabalhos.js"></script>
   <script>
     document.getElementById('ano').textContent = new Date().getFullYear();
+
+    (function () {
+      const clientesEl = document.getElementById('clientes-lista');
+      const trabalhosEl = document.getElementById('trabalhos-lista');
+      const lista = typeof trabalhos !== 'undefined' ? trabalhos : [];
+      const clientes = [...new Set(lista.map((t) => t.cliente))];
+      let clienteAtivo = 'Todos';
+
+      function iniciais(nome) {
+        return nome
+          .split(' ')
+          .filter(Boolean)
+          .slice(0, 2)
+          .map((p) => p[0].toUpperCase())
+          .join('');
+      }
+
+      function renderClientes() {
+        const nomes = ['Todos', ...clientes];
+        clientesEl.innerHTML = nomes
+          .map((nome) => {
+            const ativo = nome === clienteAtivo ? ' cliente-ativo' : '';
+            const logo = lista.find((t) => t.cliente === nome && t.logoCliente);
+            const conteudo = logo
+              ? `<img src="${logo.logoCliente}" alt="${nome}" onerror="this.replaceWith(Object.assign(document.createElement('span'), {className: 'cliente-iniciais', textContent: '${iniciais(nome)}'}))">`
+              : `<span class="cliente-iniciais">${nome === 'Todos' ? '★' : iniciais(nome)}</span>`;
+            return `<button type="button" class="cliente-botao${ativo}" data-cliente="${nome}">${conteudo}<span class="cliente-nome">${nome}</span></button>`;
+          })
+          .join('');
+      }
+
+      function renderTrabalhos() {
+        const filtrados = clienteAtivo === 'Todos'
+          ? lista
+          : lista.filter((t) => t.cliente === clienteAtivo);
+
+        if (filtrados.length === 0) {
+          trabalhosEl.innerHTML = '<p>Nenhum trabalho cadastrado ainda.</p>';
+          return;
+        }
+
+        trabalhosEl.innerHTML = filtrados
+          .map(
+            (t) => `
+              <article class="card">
+                ${t.imagem ? `<img class="card-imagem" src="${t.imagem}" alt="${t.titulo}">` : ''}
+                <h3>${t.titulo}</h3>
+                <p class="card-categoria">${t.categoria}</p>
+                <p>${t.descricao}</p>
+                <p class="card-cliente">${t.cliente}</p>
+              </article>
+            `
+          )
+          .join('');
+      }
+
+      clientesEl.addEventListener('click', (evento) => {
+        const botao = evento.target.closest('.cliente-botao');
+        if (!botao) return;
+        clienteAtivo = botao.dataset.cliente;
+        renderClientes();
+        renderTrabalhos();
+      });
+
+      renderClientes();
+      renderTrabalhos();
+    })();
   </script>
 </body>
 </html>
