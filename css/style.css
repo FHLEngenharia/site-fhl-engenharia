@@ -35,6 +35,8 @@ a {
 /* Header */
 .site-header {
   border-bottom: 1px solid #e6e9ea;
+  border-top: 4px solid transparent;
+  border-image: linear-gradient(90deg, var(--color-blue), var(--color-green)) 1;
   position: sticky;
   top: 0;
   background: var(--color-bg);
@@ -45,13 +47,36 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }
 
 .brand-logo {
-  height: 56px;
+  height: 76px;
   display: block;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  font-weight: 800;
+  font-size: 1.15rem;
+  color: var(--color-dark);
+  line-height: 1.2;
+}
+
+.brand-text span {
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: var(--color-text-light);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .main-nav a {
@@ -66,14 +91,40 @@ a {
 
 /* Hero */
 .hero {
-  background: linear-gradient(135deg, var(--color-dark), #24575f);
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(28, 143, 199, 0.35), transparent 45%),
+    radial-gradient(circle at 85% 80%, rgba(57, 180, 74, 0.3), transparent 50%),
+    linear-gradient(135deg, var(--color-dark), #1f3a41);
   color: #fff;
-  padding: 96px 0;
+  padding: 110px 0 100px;
   text-align: center;
 }
 
+.hero-pattern {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 42px 42px;
+  mask-image: radial-gradient(circle at center, #000 45%, transparent 85%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-logo {
+  height: 96px;
+  margin-bottom: 28px;
+  filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.35));
+}
+
 .hero h1 {
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   margin: 0 0 20px;
   max-width: 800px;
   margin-left: auto;
@@ -108,9 +159,23 @@ section {
 
 h2 {
   font-size: 1.9rem;
-  margin-bottom: 40px;
+  margin: 0 0 40px;
   text-align: center;
   color: var(--color-dark);
+  position: relative;
+  padding-bottom: 18px;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 56px;
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--color-blue), var(--color-green));
 }
 
 .servicos {
@@ -126,12 +191,36 @@ h2 {
 .card {
   background: #fff;
   border: 1px solid #e6e9ea;
-  border-radius: 8px;
-  padding: 28px;
+  border-radius: 10px;
+  padding: 32px 28px;
+  box-shadow: 0 2px 6px rgba(30, 40, 45, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(30, 40, 45, 0.1);
+}
+
+.card-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, rgba(28, 143, 199, 0.12), rgba(57, 180, 74, 0.12));
+  color: var(--color-blue);
+}
+
+.card-icon svg {
+  width: 28px;
+  height: 28px;
 }
 
 .card h3 {
-  color: var(--color-blue);
+  color: var(--color-dark);
   margin-top: 0;
 }
 
@@ -260,11 +349,24 @@ h2 {
 
 @media (max-width: 640px) {
   .hero {
-    padding: 64px 0;
+    padding: 72px 0 56px;
+  }
+
+  .hero-logo {
+    height: 64px;
+    margin-bottom: 20px;
   }
 
   .hero h1 {
     font-size: 1.8rem;
+  }
+
+  .brand-logo {
+    height: 52px;
+  }
+
+  .brand-text {
+    display: none;
   }
 
   .main-nav a {
