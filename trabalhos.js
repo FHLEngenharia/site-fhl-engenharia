@@ -62,7 +62,7 @@ const trabalhos = [
     imagem: ""
   },
   {
-    cliente: "FDE - Fundação para o Desenvolvimento da Educação",
+    cliente: "FDE",
     logoCliente: "assets/clientes/fde.svg",
     titulo: "Vistoria técnica de unidade escolar",
     categoria: "Vistoria Predial",
