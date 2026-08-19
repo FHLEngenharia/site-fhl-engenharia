@@ -23,7 +23,7 @@ const trabalhos = [
   },
   {
     cliente: "Caixa Econômica Federal",
-    logoCliente: "assets/clientes/caixa.png",
+    logoCliente: "assets/clientes/caixa.svg",
     titulo: "Avaliação imobiliária para fins de financiamento",
     categoria: "Avaliação Imobiliária",
     descricao: "Avaliação de imóvel urbano conforme NBR 14653, para concessão de crédito imobiliário.",
@@ -31,7 +31,7 @@ const trabalhos = [
   },
   {
     cliente: "Caixa Econômica Federal",
-    logoCliente: "assets/clientes/caixa.png",
+    logoCliente: "assets/clientes/caixa.svg",
     titulo: "Vistoria técnica de imóvel residencial",
     categoria: "Vistoria Predial",
     descricao: "Vistoria cautelar com relatório fotográfico e identificação de patologias construtivas.",
@@ -39,7 +39,7 @@ const trabalhos = [
   },
   {
     cliente: "Sest Senat",
-    logoCliente: "assets/clientes/sest-senat.png",
+    logoCliente: "assets/clientes/sest-senat.svg",
     titulo: "Laudo técnico de vistoria predial",
     categoria: "Laudo Técnico",
     descricao: "Vistoria e laudo técnico de unidade, com levantamento de patologias e recomendações técnicas.",
@@ -47,7 +47,7 @@ const trabalhos = [
   },
   {
     cliente: "Concremat Engenharia",
-    logoCliente: "assets/clientes/concremat.png",
+    logoCliente: "assets/clientes/concremat.svg",
     titulo: "Acompanhamento técnico e vistoria de obra",
     categoria: "Assistência Técnica",
     descricao: "Apoio técnico com registro de ocorrências e vistorias periódicas em atendimento a contrato de engenharia.",
@@ -55,7 +55,7 @@ const trabalhos = [
   },
   {
     cliente: "Máquinas Agrícolas Jacto",
-    logoCliente: "assets/clientes/jacto.png",
+    logoCliente: "assets/clientes/jacto.svg",
     titulo: "Laudo técnico de engenharia",
     categoria: "Laudo Técnico",
     descricao: "Laudo técnico elaborado para atendimento às necessidades da empresa.",

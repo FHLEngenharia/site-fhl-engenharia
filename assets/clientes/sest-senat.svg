@@ -1,0 +1,10 @@
+<svg viewBox="0 0 300 170" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgSestSenat" cx="50%" cy="45%" r="75%">
+      <stop offset="0%" stop-color="#1a3f6b"/>
+      <stop offset="100%" stop-color="#081a33"/>
+    </radialGradient>
+  </defs>
+  <rect x="0" y="0" width="300" height="170" fill="url(#bgSestSenat)"/>
+  <text x="150" y="98" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="46" font-style="italic" font-weight="800" letter-spacing="2" fill="#ffffff">SEST SENAT</text>
+</svg>
