@@ -54,8 +54,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .main-nav {
@@ -125,7 +125,7 @@ a {
 }
 
 .brand-logo {
-  height: 84px;
+  height: 136px;
   display: block;
   position: relative;
   z-index: 1;
@@ -284,7 +284,7 @@ a {
   justify-content: center;
   background: #fff;
   border-radius: 20px;
-  padding: 18px 24px;
+  padding: 10px 14px;
   margin-bottom: 32px;
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
   border: 3px solid transparent;
@@ -294,7 +294,7 @@ a {
 }
 
 .hero-logo {
-  height: 92px;
+  height: 175px;
   display: block;
 }
 
@@ -611,7 +611,7 @@ h2::after {
 }
 
 .contato-logo-badge img {
-  height: 44px;
+  height: 64px;
   display: block;
 }
 
@@ -719,7 +719,7 @@ h2::after {
   }
 
   .hero-logo {
-    height: 64px;
+    height: 100px;
     margin-bottom: 20px;
   }
 
@@ -728,7 +728,7 @@ h2::after {
   }
 
   .brand-logo {
-    height: 52px;
+    height: 76px;
   }
 
   .brand-text {
