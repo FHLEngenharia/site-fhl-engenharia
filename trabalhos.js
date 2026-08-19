@@ -15,7 +15,7 @@
 const trabalhos = [
   {
     cliente: "Tribunal de Justiça de São Paulo",
-    logoCliente: "assets/clientes/tjsp.png",
+    logoCliente: "assets/clientes/tjsp.svg",
     titulo: "Perícia judicial em ação de vícios construtivos",
     categoria: "Perícia Judicial",
     descricao: "Laudo pericial elaborado para ação cível, com vistoria técnica e identificação de não conformidades construtivas.",
