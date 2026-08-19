@@ -15,7 +15,7 @@
 const trabalhos = [
   {
     cliente: "Tribunal de Justiça de São Paulo",
-    logoCliente: "",
+    logoCliente: "assets/clientes/tjsp.png",
     titulo: "Perícia judicial em ação de vícios construtivos",
     categoria: "Perícia Judicial",
     descricao: "Laudo pericial elaborado para ação cível, com vistoria técnica e identificação de não conformidades construtivas.",
@@ -23,7 +23,7 @@ const trabalhos = [
   },
   {
     cliente: "Caixa Econômica Federal",
-    logoCliente: "",
+    logoCliente: "assets/clientes/caixa.png",
     titulo: "Avaliação imobiliária para fins de financiamento",
     categoria: "Avaliação Imobiliária",
     descricao: "Avaliação de imóvel urbano conforme NBR 14653, para concessão de crédito imobiliário.",
@@ -31,10 +31,34 @@ const trabalhos = [
   },
   {
     cliente: "Caixa Econômica Federal",
-    logoCliente: "",
+    logoCliente: "assets/clientes/caixa.png",
     titulo: "Vistoria técnica de imóvel residencial",
     categoria: "Vistoria Predial",
     descricao: "Vistoria cautelar com relatório fotográfico e identificação de patologias construtivas.",
+    imagem: ""
+  },
+  {
+    cliente: "Sest Senat",
+    logoCliente: "assets/clientes/sest-senat.png",
+    titulo: "Laudo técnico de vistoria predial",
+    categoria: "Laudo Técnico",
+    descricao: "Vistoria e laudo técnico de unidade, com levantamento de patologias e recomendações técnicas.",
+    imagem: ""
+  },
+  {
+    cliente: "Concremat Engenharia",
+    logoCliente: "assets/clientes/concremat.png",
+    titulo: "Acompanhamento técnico e vistoria de obra",
+    categoria: "Assistência Técnica",
+    descricao: "Apoio técnico com registro de ocorrências e vistorias periódicas em atendimento a contrato de engenharia.",
+    imagem: ""
+  },
+  {
+    cliente: "Máquinas Agrícolas Jacto",
+    logoCliente: "assets/clientes/jacto.png",
+    titulo: "Laudo técnico de engenharia",
+    categoria: "Laudo Técnico",
+    descricao: "Laudo técnico elaborado para atendimento às necessidades da empresa.",
     imagem: ""
   }
 ];

@@ -107,6 +107,72 @@ a {
   color: var(--color-blue);
 }
 
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  margin-left: 20px;
+  border-radius: 50%;
+  color: #fff;
+  background: linear-gradient(135deg, var(--color-blue), var(--color-green));
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.social-link svg {
+  width: 18px;
+  height: 18px;
+}
+
+.social-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(28, 143, 199, 0.35);
+}
+
+.social-link-disabled {
+  position: relative;
+  background: #b9c1c4;
+  cursor: not-allowed;
+}
+
+.social-link-disabled:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.social-badge {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-dark);
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+}
+
+.social-link-disabled:hover .social-badge {
+  opacity: 1;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.footer-social {
+  margin: 0;
+}
+
 /* Hero */
 .hero {
   position: relative;

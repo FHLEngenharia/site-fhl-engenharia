@@ -30,6 +30,13 @@
         <a href="#sobre">Sobre</a>
         <a href="#equipamentos">Equipamentos</a>
         <a href="#contato">Contato</a>
+        <a href="https://www.instagram.com/fhlengenharia" target="_blank" rel="noopener" class="social-link" aria-label="FHL Engenharia no Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <span class="social-link social-link-disabled" aria-disabled="true" title="WhatsApp FHL Engenharia — em breve">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.3-4.1A8 8 0 1 1 9 19.3L4 20Z" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.5 9.5c0 3.5 2.5 6 6 6" stroke-linecap="round"/></svg>
+          <span class="social-badge">em breve</span>
+        </span>
       </nav>
     </div>
   </header>
@@ -156,6 +163,27 @@
             <h3>Micrômetro</h3>
             <p>Medições de precisão milimétrica para análise de fissuras e patologias construtivas.</p>
           </div>
+          <div class="equip-item">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 4v16M21 4v16M3 8h5M21 8h-5M8 4v4M16 4v4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Paquímetro</h3>
+            <p>Medição precisa de espessuras, aberturas de fissuras e pequenas dimensões.</p>
+          </div>
+          <div class="equip-item">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="10" width="20" height="4" rx="1"/><circle cx="12" cy="12" r="1.6"/></svg>
+            </div>
+            <h3>Nível</h3>
+            <p>Verificação de prumo, alinhamento e horizontalidade de elementos construtivos.</p>
+          </div>
+          <div class="equip-item">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20h16M4 20L15 5" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 20a9 9 0 0 1 9-9" stroke-linecap="round" stroke-dasharray="2 2"/></svg>
+            </div>
+            <h3>Inclinômetro</h3>
+            <p>Medição de inclinações e desaprumos em estruturas, pisos e coberturas.</p>
+          </div>
         </div>
         <p class="equipamentos-nota">Entre outros equipamentos técnicos utilizados conforme a necessidade de cada perícia.</p>
       </div>
@@ -172,6 +200,8 @@
         <ul class="contato-list">
           <li><strong>E-mail:</strong> <a href="mailto:contato@fhlengenharia.com.br">contato@fhlengenharia.com.br</a></li>
           <li><strong>Site:</strong> <a href="https://www.fhlengenharia.com.br">www.fhlengenharia.com.br</a></li>
+          <li><strong>Instagram:</strong> <a href="https://www.instagram.com/fhlengenharia" target="_blank" rel="noopener">@fhlengenharia</a></li>
+          <li><strong>WhatsApp:</strong> FHL Engenharia <em>(em breve)</em></li>
         </ul>
       </div>
     </section>
@@ -179,6 +209,14 @@
 
   <footer class="site-footer">
     <div class="container">
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/fhlengenharia" target="_blank" rel="noopener" class="social-link footer-social" aria-label="FHL Engenharia no Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <span class="social-link social-link-disabled footer-social" aria-disabled="true" title="WhatsApp FHL Engenharia — em breve">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.3-4.1A8 8 0 1 1 9 19.3L4 20Z" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.5 9.5c0 3.5 2.5 6 6 6" stroke-linecap="round"/></svg>
+        </span>
+      </div>
       <p>&copy; <span id="ano"></span> FHL Engenharia e Avaliações Periciais Ltda. Todos os direitos reservados.</p>
     </div>
   </footer>
@@ -195,12 +233,7 @@
       let clienteAtivo = 'Todos';
 
       function iniciais(nome) {
-        return nome
-          .split(' ')
-          .filter(Boolean)
-          .slice(0, 2)
-          .map((p) => p[0].toUpperCase())
-          .join('');
+        return nome.replace(/[^\p{L}\p{N}]/gu, '').slice(0, 2).toUpperCase();
       }
 
       function renderClientes() {
