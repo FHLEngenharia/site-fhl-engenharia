@@ -1,0 +1,31 @@
+<svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="37" fill="#0a0a0a"/>
+  <rect x="0" y="37" width="400" height="37" fill="#f7f7f2"/>
+  <rect x="0" y="74" width="400" height="37" fill="#0a0a0a"/>
+  <rect x="0" y="111" width="400" height="37" fill="#f7f7f2"/>
+  <rect x="0" y="148" width="400" height="37" fill="#0a0a0a"/>
+  <rect x="0" y="185" width="400" height="35" fill="#f7f7f2"/>
+
+  <text x="200" y="27" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" font-weight="700" letter-spacing="1.5" fill="#fdfdfa">TRIBUNAL DE JUSTIÇA</text>
+  <text x="200" y="172" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="700" letter-spacing="1" fill="#fdfdfa">3 DE FEVEREIRO DE 1874</text>
+
+  <polygon points="20,110 50,68 350,68 380,110 350,152 50,152" fill="#b5121b" stroke="#d4af37" stroke-width="5" stroke-linejoin="round"/>
+
+  <g fill="#d4af37">
+    <polygon points="0,-8 1.9,-2.5 7.6,-2.5 3,1 4.7,6.5 0,3 -4.7,6.5 -3,1 -7.6,-2.5 -1.9,-2.5" transform="translate(95,86)"/>
+    <polygon points="0,-8 1.9,-2.5 7.6,-2.5 3,1 4.7,6.5 0,3 -4.7,6.5 -3,1 -7.6,-2.5 -1.9,-2.5" transform="translate(305,86)"/>
+  </g>
+
+  <text x="108" y="138" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="56" font-weight="700" fill="#d4af37">S</text>
+  <text x="292" y="138" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="56" font-weight="700" fill="#d4af37">P</text>
+
+  <g stroke="#d4af37" fill="none">
+    <line x1="200" y1="80" x2="200" y2="148" stroke-width="3"/>
+    <line x1="178" y1="97" x2="222" y2="97" stroke-width="3"/>
+    <line x1="178" y1="97" x2="178" y2="108" stroke-width="2"/>
+    <line x1="222" y1="97" x2="222" y2="108" stroke-width="2"/>
+    <circle cx="178" cy="112" r="6" stroke-width="2"/>
+    <circle cx="222" cy="112" r="6" stroke-width="2"/>
+    <circle cx="200" cy="79" r="3" fill="#d4af37"/>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+<svg viewBox="0 0 300 170" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(115,8) scale(0.66)">
+    <polygon points="35.46,54.05 55.46,31.05 64.54,38.95 44.54,61.95" fill="#13284a"/>
+    <polygon points="55.46,31.05 75.46,8.05 84.54,15.95 64.54,38.95" fill="#5b9bd5"/>
+    <polygon points="37.32,63.37 13.32,51.37 18.68,40.63 42.68,52.63" fill="#13284a"/>
+  </g>
+  <text x="150" y="112" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800" letter-spacing="1" fill="#13284a">CONCREMAT</text>
+  <text x="150" y="136" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#f5a623">engenharia e tecnologia</text>
+</svg>

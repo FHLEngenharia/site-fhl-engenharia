@@ -19,19 +19,35 @@
   <header class="site-header">
     <div class="container header-inner">
       <a href="#top" class="brand">
-        <img src="assets/logo.png" alt="FHL Engenharia e Avaliações Periciais Ltda" class="brand-logo">
+        <span class="brand-logo-glow">
+          <img src="assets/logo.png" alt="FHL Engenharia e Avaliações Periciais Ltda" class="brand-logo">
+        </span>
+        <span class="brand-text">FHL Engenharia<span>Avaliações Periciais</span></span>
       </a>
       <nav class="main-nav">
         <a href="#servicos">Serviços</a>
+        <a href="#trabalhos">Trabalhos</a>
         <a href="#sobre">Sobre</a>
+        <a href="#equipamentos">Equipamentos</a>
         <a href="#contato">Contato</a>
+        <a href="https://www.instagram.com/fhlengenharia" target="_blank" rel="noopener" class="social-link" aria-label="FHL Engenharia no Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <span class="social-link social-link-disabled" aria-disabled="true" title="WhatsApp FHL Engenharia — em breve">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.3-4.1A8 8 0 1 1 9 19.3L4 20Z" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.5 9.5c0 3.5 2.5 6 6 6" stroke-linecap="round"/></svg>
+          <span class="social-badge">em breve</span>
+        </span>
       </nav>
     </div>
   </header>
 
   <main>
     <section id="top" class="hero">
-      <div class="container">
+      <div class="hero-pattern" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <div class="hero-logo-badge">
+          <img src="assets/logo.png" alt="" class="hero-logo" aria-hidden="true">
+        </div>
         <h1>Perícias e Avaliações de Engenharia com precisão técnica</h1>
         <p class="hero-subtitle">
           Laudos periciais, avaliações imobiliárias e assistência técnica para processos
@@ -46,26 +62,44 @@
         <h2>Serviços</h2>
         <div class="cards">
           <article class="card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v18M5 7l-3 6a3 3 0 0 0 6 0l-3-6Zm14 0l-3 6a3 3 0 0 0 6 0l-3-6ZM5 7h14M8 21h8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
             <h3>Perícias Judiciais</h3>
             <p>Atuação como perito nomeado pelo juízo em ações cíveis, com elaboração de laudos técnicos claros e imparciais.</p>
           </article>
           <article class="card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 11l9-7 9 7M5 10v10h14V10M10 20v-6h4v6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
             <h3>Avaliações Imobiliárias</h3>
             <p>Avaliação de imóveis urbanos e rurais conforme a NBR 14653, para fins judiciais, bancários ou particulares.</p>
           </article>
           <article class="card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 12l2 2 4-4M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
             <h3>Assistência Técnica</h3>
             <p>Suporte técnico às partes em processos judiciais, com análise crítica de laudos periciais e quesitos.</p>
           </article>
           <article class="card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M21 21l-5.2-5.2" stroke-linecap="round"/></svg>
+            </div>
             <h3>Vistorias Prediais</h3>
             <p>Vistorias cautelares e de entrega de obra, identificação de vícios construtivos e não conformidades.</p>
           </article>
           <article class="card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 3h7l4 4v14H7V3Z" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 3v4h4M9.5 12h5M9.5 15.5h5M9.5 8.5h2" stroke-linecap="round"/></svg>
+            </div>
             <h3>Laudos Técnicos</h3>
             <p>Laudos de avaliação, constatação e vistoria, elaborados com base nas normas técnicas da ABNT e diretrizes do IBAPE.</p>
           </article>
           <article class="card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="9" width="16" height="12" rx="1"/><path d="M9 21v-5h6v5M8 9V6a4 4 0 0 1 8 0v3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
             <h3>Regularização de Imóveis</h3>
             <p>Levantamento técnico e acompanhamento de processos de regularização junto a prefeituras e cartórios.</p>
           </article>
@@ -73,10 +107,20 @@
       </div>
     </section>
 
+    <section id="trabalhos" class="trabalhos">
+      <div class="container">
+        <h2>Trabalhos Realizados</h2>
+        <p class="trabalhos-intro">Clique no cliente para ver os trabalhos realizados para ele.</p>
+
+        <div id="clientes-lista" class="clientes-lista"></div>
+        <div id="trabalhos-lista" class="cards"></div>
+      </div>
+    </section>
+
     <section id="sobre" class="sobre">
       <div class="container">
         <h2>Sobre a FHL Engenharia</h2>
-        <p>
+        <p class="sobre-texto">
           A FHL Engenharia e Avaliações Periciais Ltda é uma empresa especializada em perícias
           e avaliações de engenharia, atuando com rigor técnico e imparcialidade em processos
           judiciais e demandas particulares. Nosso trabalho é pautado pelas normas da ABNT e
@@ -86,13 +130,85 @@
       </div>
     </section>
 
-    <section id="contato" class="contato">
+    <section id="equipamentos" class="equipamentos">
       <div class="container">
+        <h2>Equipamentos e Tecnologia</h2>
+        <p class="equipamentos-intro">Utilizamos equipamentos especializados para garantir precisão e confiabilidade em cada laudo.</p>
+        <div class="equip-grid">
+          <div class="equip-item">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="5" cy="5" r="2"/><circle cx="19" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M6.5 6.5L11 11M17.5 6.5L13 11M6.5 17.5L11 13M17.5 17.5L13 13" stroke-linecap="round"/><circle cx="12" cy="12" r="2.4"/></svg>
+            </div>
+            <h3>Drone</h3>
+            <p>Vistorias aéreas e aerofotogrametria para inspeção de coberturas, fachadas e áreas de difícil acesso.</p>
+          </div>
+          <div class="equip-item">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="7" width="14" height="11" rx="2"/><path d="M17 10l4-2.5v9L17 14" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="12.5" r="3.2"/></svg>
+            </div>
+            <h3>Câmera Termográfica</h3>
+            <p>Termografia infravermelha para identificação de infiltrações, umidade e falhas construtivas ocultas.</p>
+          </div>
+          <div class="equip-item">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 17l6-6M21 7l-6 6M9 11l4 4" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 17v4h4M21 7V3h-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Trena e Nível a Laser</h3>
+            <p>Medições precisas de distâncias, áreas, prumo e nivelamento em campo.</p>
+          </div>
+          <div class="equip-item">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 14l6-6 2 2 8-8M17 2h3v3" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 14v6h16" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Micrômetro</h3>
+            <p>Medições de precisão milimétrica para análise de fissuras e patologias construtivas.</p>
+          </div>
+          <div class="equip-item">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 4v16M21 4v16M3 8h5M21 8h-5M8 4v4M16 4v4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Paquímetro</h3>
+            <p>Medição precisa de espessuras, aberturas de fissuras e pequenas dimensões.</p>
+          </div>
+          <div class="equip-item">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="10" width="20" height="4" rx="1"/><circle cx="12" cy="12" r="1.6"/></svg>
+            </div>
+            <h3>Nível</h3>
+            <p>Verificação de prumo, alinhamento e horizontalidade de elementos construtivos.</p>
+          </div>
+          <div class="equip-item">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20h16M4 20L15 5" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 20a9 9 0 0 1 9-9" stroke-linecap="round" stroke-dasharray="2 2"/></svg>
+            </div>
+            <h3>Inclinômetro</h3>
+            <p>Medição de inclinações e desaprumos em estruturas, pisos e coberturas.</p>
+          </div>
+          <div class="equip-item">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2C9 7 5 11 5 15a7 7 0 0 0 14 0c0-4-4-8-7-13Z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Medidor de Umidade</h3>
+            <p>Detecção de umidade em paredes, pisos e coberturas para diagnóstico de infiltrações.</p>
+          </div>
+        </div>
+        <p class="equipamentos-nota">Entre outros equipamentos técnicos utilizados conforme a necessidade de cada perícia.</p>
+      </div>
+    </section>
+
+    <section id="contato" class="contato">
+      <div class="hero-pattern" aria-hidden="true"></div>
+      <div class="container">
+        <span class="contato-logo-badge">
+          <img src="assets/logo.png" alt="" aria-hidden="true">
+        </span>
         <h2>Contato</h2>
         <p>Entre em contato para solicitar um orçamento ou tirar dúvidas sobre nossos serviços.</p>
         <ul class="contato-list">
           <li><strong>E-mail:</strong> <a href="mailto:contato@fhlengenharia.com.br">contato@fhlengenharia.com.br</a></li>
           <li><strong>Site:</strong> <a href="https://www.fhlengenharia.com.br">www.fhlengenharia.com.br</a></li>
+          <li><strong>Instagram:</strong> <a href="https://www.instagram.com/fhlengenharia" target="_blank" rel="noopener">@fhlengenharia</a></li>
+          <li><strong>WhatsApp:</strong> FHL Engenharia <em>(em breve)</em></li>
         </ul>
       </div>
     </section>
@@ -100,12 +216,83 @@
 
   <footer class="site-footer">
     <div class="container">
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/fhlengenharia" target="_blank" rel="noopener" class="social-link footer-social" aria-label="FHL Engenharia no Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <span class="social-link social-link-disabled footer-social" aria-disabled="true" title="WhatsApp FHL Engenharia — em breve">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.3-4.1A8 8 0 1 1 9 19.3L4 20Z" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.5 9.5c0 3.5 2.5 6 6 6" stroke-linecap="round"/></svg>
+        </span>
+      </div>
       <p>&copy; <span id="ano"></span> FHL Engenharia e Avaliações Periciais Ltda. Todos os direitos reservados.</p>
     </div>
   </footer>
 
+  <script src="trabalhos.js"></script>
   <script>
     document.getElementById('ano').textContent = new Date().getFullYear();
+
+    (function () {
+      const clientesEl = document.getElementById('clientes-lista');
+      const trabalhosEl = document.getElementById('trabalhos-lista');
+      const lista = typeof trabalhos !== 'undefined' ? trabalhos : [];
+      const clientes = [...new Set(lista.map((t) => t.cliente))];
+      let clienteAtivo = 'Todos';
+
+      function iniciais(nome) {
+        return nome.replace(/[^\p{L}\p{N}]/gu, '').slice(0, 2).toUpperCase();
+      }
+
+      function renderClientes() {
+        const nomes = ['Todos', ...clientes];
+        clientesEl.innerHTML = nomes
+          .map((nome) => {
+            const ativo = nome === clienteAtivo ? ' cliente-ativo' : '';
+            const logo = lista.find((t) => t.cliente === nome && t.logoCliente);
+            const conteudo = logo
+              ? `<img src="${logo.logoCliente}" alt="${nome}" onerror="this.replaceWith(Object.assign(document.createElement('span'), {className: 'cliente-iniciais', textContent: '${iniciais(nome)}'}))">`
+              : `<span class="cliente-iniciais">${nome === 'Todos' ? '★' : iniciais(nome)}</span>`;
+            return `<button type="button" class="cliente-botao${ativo}" data-cliente="${nome}">${conteudo}<span class="cliente-nome">${nome}</span></button>`;
+          })
+          .join('');
+      }
+
+      function renderTrabalhos() {
+        const filtrados = clienteAtivo === 'Todos'
+          ? lista
+          : lista.filter((t) => t.cliente === clienteAtivo);
+
+        if (filtrados.length === 0) {
+          trabalhosEl.innerHTML = '<p>Nenhum trabalho cadastrado ainda.</p>';
+          return;
+        }
+
+        trabalhosEl.innerHTML = filtrados
+          .map(
+            (t) => `
+              <article class="card">
+                ${t.imagem ? `<img class="card-imagem" src="${t.imagem}" alt="${t.titulo}">` : ''}
+                <h3>${t.titulo}</h3>
+                <p class="card-categoria">${t.categoria}</p>
+                <p>${t.descricao}</p>
+                <p class="card-cliente">${t.cliente}</p>
+              </article>
+            `
+          )
+          .join('');
+      }
+
+      clientesEl.addEventListener('click', (evento) => {
+        const botao = evento.target.closest('.cliente-botao');
+        if (!botao) return;
+        clienteAtivo = botao.dataset.cliente;
+        renderClientes();
+        renderTrabalhos();
+      });
+
+      renderClientes();
+      renderTrabalhos();
+    })();
   </script>
 </body>
 </html>
