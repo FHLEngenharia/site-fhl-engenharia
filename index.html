@@ -35,6 +35,7 @@
         <a href="#trabalhos">Trabalhos</a>
         <a href="#sobre">Sobre</a>
         <a href="#equipamentos">Equipamentos</a>
+        <a href="#condominios">Condomínios</a>
         <a href="#contato">Contato</a>
         <div class="nav-socials">
           <a href="https://www.instagram.com/fhlengenharia" target="_blank" rel="noopener" class="social-link" aria-label="FHL Engenharia no Instagram">
@@ -231,6 +232,60 @@
       </div>
     </section>
 
+    <section id="condominios" class="condominios">
+      <div class="container">
+        <h2>Inspeção Predial para Condomínios</h2>
+        <p class="condominios-intro">
+          O síndico responde técnica e legalmente pela segurança da edificação. A
+          <strong>NBR 16747</strong> estabelece as diretrizes para a inspeção predial, e a
+          <strong>NBR 5674</strong> trata da manutenção das edificações — normas que orientam,
+          e em diversos municípios tornam obrigatória, a realização de vistorias periódicas.
+          Fazer a inspeção em dia reduz risco de acidentes, protege o síndico de
+          responsabilização e ajuda no planejamento financeiro da manutenção.
+        </p>
+
+        <div class="cards condominios-grid">
+          <article class="card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 21V9l8-6 8 6v12" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 21v-8h6v8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Estrutura</h3>
+            <p>Avaliação de elementos estruturais, fissuras e sinais de comprometimento.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M4 9h16M4 15h16M10 3v18" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Inspeção de Fachadas</h3>
+            <p>Verificação de revestimentos e risco de desplacamento — uma das principais causas de acidentes e ações judiciais contra condomínios.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Instalações Elétricas e Hidráulicas</h3>
+            <p>Verificação de conformidade e riscos em redes elétricas, hidráulicas e de gás.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2C9 7 5 11 5 15a7 7 0 0 0 14 0c0-4-4-8-7-13Z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 15h6" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Combate a Incêndio</h3>
+            <p>Checagem de extintores, hidrantes, sinalização e rotas de fuga.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="7" y="2" width="10" height="20" rx="1"/><path d="M11 8h2M11 12h2M11 16h2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Elevadores e Áreas Comuns</h3>
+            <p>Vistoria de elevadores, garagens, playgrounds e demais áreas de uso coletivo.</p>
+          </article>
+        </div>
+
+        <a href="#contato" class="btn-primary">Agendar inspeção predial</a>
+      </div>
+    </section>
+
     <section id="contato" class="contato">
       <div class="hero-pattern" aria-hidden="true"></div>
       <div class="container">
@@ -351,7 +406,7 @@
     })();
 
     (function () {
-      const alvos = document.querySelectorAll('.servicos h2, .trabalhos h2, .sobre h2, .equipamentos h2, .contato h2, .sobre-texto, .card, .equip-item');
+      const alvos = document.querySelectorAll('.servicos h2, .trabalhos h2, .sobre h2, .equipamentos h2, .condominios h2, .contato h2, .sobre-texto, .condominios-intro, .card, .equip-item');
       alvos.forEach((el) => {
         el.classList.add('reveal');
         const grupo = el.closest('.cards, .equip-grid');
