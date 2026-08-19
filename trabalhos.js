@@ -60,5 +60,13 @@ const trabalhos = [
     categoria: "Laudo Técnico",
     descricao: "Laudo técnico elaborado para atendimento às necessidades da empresa.",
     imagem: ""
+  },
+  {
+    cliente: "FDE - Fundação para o Desenvolvimento da Educação",
+    logoCliente: "assets/clientes/fde.svg",
+    titulo: "Vistoria técnica de unidade escolar",
+    categoria: "Vistoria Predial",
+    descricao: "Vistoria técnica em unidade escolar, em atendimento a demanda da Fundação para o Desenvolvimento da Educação (FDE).",
+    imagem: ""
   }
 ];
